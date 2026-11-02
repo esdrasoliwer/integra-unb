@@ -40,3 +40,14 @@ def test_pagina_inexistente(client):
     resposta = client.get("/pagina-inexistente")
 
     assert resposta.status_code == 404
+
+
+def test_acoes_realizadas(client):
+    resposta = client.get("/realizadas")
+    assert resposta.status_code == 200
+    assert "Viveiro-Escola" in resposta.get_data(as_text=True)
+
+def test_documentos(client):
+    resposta = client.get("/documentos")
+    assert resposta.status_code == 200
+    assert "23106.016701/2025-44" in resposta.get_data(as_text=True)

@@ -1,33 +1,22 @@
-# Integra UnB
+# Integra UnB — versão 3
 
-Plataforma web para divulgação das iniciativas da Comissão de Integração e Eventos do Decanato de Gestão de Pessoas (DGP) da Universidade de Brasília (UnB).
+Protótipo acadêmico de divulgação e memória das ações da Comissão de Integração e Eventos do DGP/UnB.
 
-## Objetivo
+## Executar
 
-Organizar e facilitar o acesso às informações sobre atividades de integração, reconhecimento, desenvolvimento e bem-estar destinadas aos servidores do DGP.
+```bash
+py -m pip install Flask
+py app.py
+```
 
-## Público-alvo
+Acesse http://127.0.0.1:5000. Para testes: `py -m pip install -r requirements.txt` e `py -m pytest tests/ -v`.
 
-Servidores técnico-administrativos do DGP/UnB e integrantes da Comissão de Integração e Eventos.
+## Funcionalidades demonstrativas
 
-## Funcionalidades previstas
+- Página inicial, programação, detalhes, ações realizadas e documentos.
+- Formulário histórico da mostra "Meu caminhar" (prazo encerrado).
+- Referência ao processo SEI 23106.016701/2025-44 (não é link de acesso aos autos).
+- Relatórios citados, mas PDFs **não incluídos** por dependerem de autorização para divulgação pública.
+- Navegação por teclado, foco visível, layout responsivo e identidade visual DGP.
 
-- Consulta pública às iniciativas.
-- Visualização da programação de atividades.
-- Consulta aos detalhes de cada iniciativa.
-- Área administrativa para cadastro e publicação de conteúdos.
-
-## Tecnologias
-
-- Python
-- Flask
-- HTML, CSS e JavaScript
-- SQLite
-
-## Situação do projeto
-
-MVP em desenvolvimento, como parte da Experiência Prática III da disciplina de Projeto de Software.
-
-## Contexto acadêmico
-
-Projeto desenvolvido a partir das necessidades identificadas nas Experiências Práticas I e II.
+Não há inscrições abertas, banco de dados, autenticação ou área de comentários nesta versão. Eventos futuros são ilustrativos ou preliminares, sem confirmação institucional.

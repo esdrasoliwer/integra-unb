@@ -65,6 +65,10 @@ def programacao():
     return render_template("programacao.html")
 
 
+@app.route("/detalhes")
+def detalhes():
+    return render_template("detalhes.html")
+
 
 if __name__ == "__main__":
     app.run(debug=False)

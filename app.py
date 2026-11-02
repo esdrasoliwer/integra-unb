@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template_string
+from flask import Flask, render_template, render_template_string
 
 app = Flask(__name__)
 
@@ -59,13 +59,11 @@ def inicio():
     return render_template_string(HTML)
 
 
+
 @app.route("/programacao")
 def programacao():
-    return """
-    <h1>Programação — Integra UnB</h1>
-    <p>As iniciativas serão divulgadas nesta página.</p>
-    <a href="/">Voltar ao início</a>
-    """
+    return render_template("programacao.html")
+
 
 
 if __name__ == "__main__":
